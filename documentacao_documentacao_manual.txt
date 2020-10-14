@@ -1,0 +1,31 @@
+FUNÇÃO : LOGIN :{
+
+         METODO: "POST",
+	 PATH: "api/login",
+	 REQUEST BODY:{email,senha} (sempre minusculo),
+	 RESPONSE:"_id" (elemento id, um rash que você vai usar para criar documentos, deletar e buscar documentos);
+},
+
+CADASTRO:{
+
+	 METODO: "POST",
+	 PATH: "api/cadastro",
+	 REQUEST BODY:{email,senha} (sempre minusculo),
+	 RESPONSE:"_id" (STATUS 200, CADASTRADO COM SUCESSO);
+
+},
+
+Select POSTAGENS:{
+	 METODO: "POST",
+	 PATH: "api/api",
+	 REQUEST BODY:{idUser} (elemento deve ser passado exatamente igual. Esse é o valor do id do usuário, fornecido no pós login),
+	 RESPONSE:"_id" (STATUS 200, e a lista de postagens do usuário);
+}
+
+
+Deletar_Postagem:{
+	 METODO: "POST",
+	 PATH: "api/deletearquivo",
+	 REQUEST BODY:{idArquivo} (elemento deve ser passado exatamente igual. Esse valor é recuperado no get das postagens),
+	 RESPONSE:"_id" (STATUS 200);
+}
