@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "removeComments": true,
+    "isolatedModules": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "resolveJsonModule": true,
+    "allowJs": true,
+  },
+  "include": [
+    "src/",
+    "setupJest.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "*/.spec.ts",
+    "jest.config.js"
+  ]
+}
